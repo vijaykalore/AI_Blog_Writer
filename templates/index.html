@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Blog Writer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Automatic Blog Writer</h1>
+        <p>Created by Vijay Kalore</p>
+    </header>
+    <main>
+        <section>
+            <h2>Generate Your Blog</h2>
+            <form id="blog-form">
+                <label for="topic">Enter a topic:</label>
+                <input type="text" id="topic" name="topic" required>
+                <button type="submit">Generate Blog</button>
+            </form>
+            <div id="blog-output"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Automatic Blog Writer. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
